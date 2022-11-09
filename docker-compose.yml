@@ -13,7 +13,7 @@ services:
       - ./nginx/templates:/etc/nginx/templates/
     environment:
       - NGINX_ENVSUBST_TEMPLATE_SUFFIX=.conf
-      - API_HOST=http://app:3000
+      - APP_HOST=http://app:3000
     ports: 
       - "8080:80"
     depends_on:
